@@ -1,4 +1,14 @@
+body {
+    background-color: #d3d3d3; /* Fond gris */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
 .card {
+    background-color: white; /* Fond blanc pour la carte */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
     width: 300px;
