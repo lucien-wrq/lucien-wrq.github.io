@@ -6,19 +6,19 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 20px; 
+    padding: 1.25em; /* 20px */
     overflow: hidden; 
 }
 
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgb(249, 208, 82);
+    padding: 1.25em; /* 20px */
+    box-shadow: 0 0.25em 0.5em rgb(249, 208, 82); /* 4px and 8px */
     width: 100%;
-    max-width: 600px;
+    max-width: 37.5em; /* 600px */
     max-height: 90vh; 
-    border-radius: 8px;
+    border-radius: 0.5em; /* 8px */
     text-align: left; 
     overflow-y: auto; 
     margin: auto;
@@ -27,12 +27,12 @@ body {
 .card h1 {
     font-family: 'Courier New', Courier, monospace;
     margin-top: 0;
-    font-size: 36px;
+    font-size: 2.25em; /* 36px */
     color: #935b9e; 
 }
 
 .card p {
-    margin: 5px 0;
+    margin: 0.3125em 0; /* 5px */
 }
 
 .card p:first-of-type {
@@ -42,34 +42,34 @@ body {
 .card .section-title {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 1.25em; /* 20px */
     color: #facf53; 
-    font-size: 18px;;
+    font-size: 1.125em; /* 18px */
 }
 
 .card .IT {
     font-family: 'Courier New', Courier, monospace;
     margin-bottom: 5%;
-    font-size: 20px;
+    font-size: 1.25em; /* 20px */
     color: #e4803e;
 }
 
 .card ul, .card ol {
-    padding-left: 20px;
+    padding-left: 1.25em; /* 20px */
     list-style-type: none;
 }
 
 .card ul.social-links {
     display: flex;
-    padding-top: 10px;
+    padding-top: 0.625em; /* 10px */
 }
 
 .card ul.social-links li {
-    margin-right: 10px;
+    margin-right: 0.625em; /* 10px */
 }
 
 .card ul.social-links li a {
-    font-size: 24px;
+    font-size: 1.5em; /* 24px */
     color: #0C3B6D;
     text-decoration: none;
 }
@@ -89,22 +89,24 @@ body {
 }
 
 .email-link:focus {
-    outline: 2px solid #935b9e; 
+    outline: 0.125em solid #935b9e; /* 2px */
 }
 
-
-
-@media (max-width: 600px) {
+/* Media Query pour masquer certaines sections */
+@media (max-width: 37.5em) { /* 600px */
     .card {
-        padding: 15px;
+        padding: 0.9375em; /* 15px */
     }
     .card h1 {
-        font-size: 20px;
+        font-size: 1.25em; /* 20px */
     }
     .card p {
-        font-size: 14px;
+        font-size: 0.875em; /* 14px */
     }
-    .card ul.social-links li a {
-        font-size: 20px;
+    
+    /* Masquer les sections si l'écran est petit */
+    .section-title, ol, ul {
+        display: none;
     }
 }
+
